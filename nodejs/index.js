@@ -3,11 +3,11 @@ const Queue = require('async/queue')
 const _ = require('lodash')
 
 const ATHENA_DB = 'default'
-const ATHENA_OUTPUT_LOCATION = 's3://royon-spark/athena-temp/'
+const ATHENA_OUTPUT_LOCATION = 's3://my-bucket/athena-temp/'
 const RESULT_SIZE = 1000
 const POLL_INTERVAL = 1000
 
-let creds = new AWS.SharedIniFileCredentials({filename:'/Users/royon/.aws/credentials', profile: 'royon'});
+let creds = new AWS.SharedIniFileCredentials({filename:'/Users/username/.aws/credentials', profile: 'username'});
 AWS.config.credentials = creds;
 
 let client = new AWS.Athena({region: 'us-east-1'})
