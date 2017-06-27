@@ -10,7 +10,7 @@ namespace athena_api
 {
     class Program
     {
-        private const String ATHENA_TEMP_PATH = "s3://royon-spark/athena-temp/";
+        private const String ATHENA_TEMP_PATH = "s3://my-bucket/athena-temp/";
         private const String ATHENA_DB = "default";
 
         static void Main(string[] args)
